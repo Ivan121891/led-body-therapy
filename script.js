@@ -2,7 +2,7 @@
   "use strict";
 
   // ------- Configuration -------
-  const SERVICE_NAME = "LED Red light Skin Tightening";
+  const SERVICE_NAME = "LED Body Therapy";
   const SERVICE_DURATION_MIN = 60;
 
   // GHL credentials
@@ -281,8 +281,8 @@
         lastName: lastName || '-',
         email,
         phone,
-        source: 'LED Red light Skin Tightening LP',
-        tags: ['LED Red light Skin Tightening'],
+        source: 'LED Body Therapy LP',
+        tags: ['LED Body Therapy'],
       });
       const contactId = contactRes.contact?.id || contactRes.id;
 
@@ -297,7 +297,7 @@
         assignedUserId: GHL.userId,
         startTime:      isoInTz(start, BUSINESS_TZ),
         endTime:        isoInTz(end,   BUSINESS_TZ),
-        title:          `${name} — LED Red light Skin Tightening`,
+        title:          `${name} — LED Body Therapy`,
         appointmentStatus: 'confirmed',
         selectedTimezone: BUSINESS_TZ,
       });
